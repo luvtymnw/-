@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Джермук</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_API_ключ&lang=ru_RU"></script>
+    <script src="map.js" defer></script>
+    <script src="reviews.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Джермук</h1>
+        <a href="index.html" class="back-button">← Назад к городам</a>
+    </header>
+    <main>
+        <div class="attraction">
+            <img src="images/jermuk-waterfall.jpg" alt="Водопад Джермука">
+            <h2>Водопад Джермука</h2>
+            <div class="info-box">
+                <p><strong>Высота:</strong> 68 метров</p>
+                <p><strong>Лучшее время для посещения:</strong> Круглый год</p>
+            </div>
+            <div id="map-jermuk-waterfall" class="map-container"></div>
+            <p>Второй по высоте водопад Армении, расположенный в живописном ущелье реки Арпа. Особенно впечатляюще выглядит зимой, когда замерзает и превращается в гигантскую ледяную скульптуру. Вокруг водопада проложены пешеходные тропы и смотровые площадки.</p>
+            <div class="reviews-section">
+                <h3>Отзывы <span class="rating">★★★★★ (4.7/5)</span></h3>
+                <div class="reviews-list">
+                    <div class="review">
+                        <p class="review-author">Ольга ★★★★★</p>
+                        <p class="review-text">Невероятно красивое место!</p>
+                    </div>
+                </div>
+                <form class="review-form">
+                    <select class="rating-select">
+                        <option value="5">★★★★★</option>
+                        <option value="4">★★★★☆</option>
+                        <option value="3">★★★☆☆</option>
+                        <option value="2">★★☆☆☆</option>
+                        <option value="1">★☆☆☆☆</option>
+                    </select>
+                    <textarea placeholder="Ваш отзыв..." required></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="attraction">
+            <img src="images/jermuk-mineral.jpg" alt="Минеральные источники Джермука">
+            <h2>Минеральные источники Джермука</h2>
+            <div class="info-box">
+                <p><strong>Температура воды:</strong> 30-64°C</p>
+                <p><strong>Лечебные свойства:</strong> Заболевания ЖКТ, нервной системы и опорно-двигательного аппарата</p>
+            </div>
+            <div id="map-jermuk-mineral" class="map-container"></div>
+            <p>Лечебные воды Джермука известны с древних времен. Сегодня здесь работает современный бальнеологический курорт с десятками источников разной температуры и минерализации.</p>
+            <div class="reviews-section">
+                <h3>Отзывы <span class="rating">★★★★☆ (4.5/5)</span></h3>
+                <div class="reviews-list">
+                    <div class="review">
+                        <p class="review-author">Игорь ★★★★☆</p>
+                        <p class="review-text">Отличное место для оздоровления.</p>
+                    </div>
+                </div>
+                <form class="review-form">
+                    <select class="rating-select">
+                        <option value="5">★★★★★</option>
+                        <option value="4">★★★★☆</option>
+                        <option value="3">★★★☆☆</option>
+                        <option value="2">★★☆☆☆</option>
+                        <option value="1">★☆☆☆☆</option>
+                    </select>
+                    <textarea placeholder="Ваш отзыв..." required></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

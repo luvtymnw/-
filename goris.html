@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Горис</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_API_ключ&lang=ru_RU"></script>
+    <script src="map.js" defer></script>
+    <script src="reviews.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Горис</h1>
+        <a href="index.html" class="back-button">← Назад к городам</a>
+    </header>
+    <main>
+        <div class="attraction">
+            <img src="images/khndzoresk.jpg" alt="Хндзореск">
+            <h2>Пещерный город Хндзореск</h2>
+            <div class="info-box">
+                <p><strong>📍 Адрес:</strong> 8 км от Гориса</p>
+                <p><strong>🕒 Часы работы:</strong> 9:00-19:00</p>
+            </div>
+            <div id="map-khndzoresk" class="map-container"></div>
+            <div class="reviews-section">
+                <h3>Отзывы <span class="rating">★★★★★ (4.7/5)</span></h3>
+                <div class="reviews-list">
+                    <div class="review">
+                        <p class="review-author">Светлана ★★★★★</p>
+                        <p class="review-text">Как будто попал в средневековье!</p>
+                    </div>
+                </div>
+                <form class="review-form">
+                    <select class="rating-select">
+                        <option value="5">★★★★★</option>
+                        <option value="4">★★★★☆</option>
+                        <option value="3">★★★☆☆</option>
+                        <option value="2">★★☆☆☆</option>
+                        <option value="1">★☆☆☆☆</option>
+                    </select>
+                    <textarea placeholder="Ваш отзыв..." required></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

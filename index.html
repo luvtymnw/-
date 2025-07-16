@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#007BFF">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <title>Достопримечательности Армении</title>
+</head>
+<body>
+	<header>
+        <h1>Выбор города Армении</h1>
+    </header>
+    <main>
+        <div class="city-selection">
+            <a href="yerevan.html">Ереван</a>
+            <a href="gyumri.html">Гюмри</a>
+            <a href="vagharshapat.html">Вагаршапат</a>
+            <a href="dilijan.html">Дилижан</a>
+            <a href="goris.html">Горис</a>
+            <a href="jermuk.html">Джермук</a>
+        </div>
+    </main>
+	<script>
+        // Регистрация Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(registration => console.log('ServiceWorker зарегистрирован'))
+                    .catch(err => console.log('Ошибка регистрации ServiceWorker:', err));
+            });
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ереван</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_API_ключ&lang=ru_RU"></script>
+    <script src="map.js" defer></script>
+    <script src="reviews.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Ереван</h1>
+        <a href="index.html" class="back-button">← Назад к городам</a>
+    </header>
+    <main>
+        <div class="attraction">
+            <img src="images/cascade.jpg" alt="Каскад в Ереване">
+            <h2>Каскад</h2>
+            <div class="info-box">
+                <p><strong>Часы работы:</strong> 8:00-23:00 (лето), 9:00-22:00 (зима)</p>
+                <p><strong>Цена билета:</strong> Бесплатно (музей внутри — 1500 AMD)</p>
+                <p><strong>Адрес:</strong> ул. Таманяна, 10</p>
+            </div>
+            <div id="map-cascade" class="map-container"></div>
+            <div class="detailed-info">
+                <h3>История и описание:</h3>
+                <p>Каскад — это грандиозный архитектурный комплекс, построенный в 1970-х годах по проекту Александра Таманяна. Состоит из 572 ступеней, украшенных фонтанами и современными скульптурами (включая работы Ботеро). Внутри находится <strong>Центр искусств Гафесчяна</strong> с коллекцией современного искусства.</p>
+                <p><strong>Интересный факт:</strong> Каскад символизирует "возрождение" Армении, а его ступени напоминают террасы древнего города Урарту.</p>
+                
+                <h3>Советы посетителям:</h3>
+                <ul>
+                    <li>Лучшее время для посещения — вечер, когда включается подсветка.</li>
+                    <li>На вершине работает кафе с панорамным видом на Арарат.</li>
+                    <li>Для подъема можно воспользоваться лифтом (платно).</li>
+                </ul>
+            </div>
+            <div class="reviews-section">
+                <h3>Отзывы <span class="rating">★★★★☆ (4.6/5)</span></h3>
+                <div class="reviews-list">
+                    <div class="review">
+                        <p class="review-author">Михаил ★★★★★</p>
+                        <p class="review-text">Прекрасный вид на город!</p>
+                    </div>
+                </div>
+                <form class="review-form">
+                    <select class="rating-select">
+                        <option value="5">★★★★★</option>
+                        <option value="4">★★★★☆</option>
+                        <option value="3">★★★☆☆</option>
+                        <option value="2">★★☆☆☆</option>
+                        <option value="1">★☆☆☆☆</option>
+                    </select>
+                    <textarea placeholder="Ваш отзыв..." required></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="attraction">
+            <img src="images/republic-square.jpg" alt="Площадь Республики">
+            <h2>Площадь Республики</h2>
+            <div class="info-box">
+                <p><strong>Часы работы:</strong> Круглосуточно</p>
+                <p><strong>Особое событие:</strong> Поющие фонтаны (20:00-23:00)</p>
+            </div>
+            <div id="map-republic_square" class="map-container"></div>
+            <div class="detailed-info">
+                <h3>История и описание:</h3>
+                <p>Главная площадь Еревана, построенная в 1924-1958 гг. в стиле <strong>армянского неоклассицизма</strong>. Ансамбль включает 5 зданий из розового туфа, образующих полукруг. В центре — мозаичные узоры, изображающие традиционные армянские ковры.</p>
+                <p><strong>Что посмотреть:</strong></p>
+                <ul>
+                    <li>Здание правительства с курантами</li>
+                    <li>Исторический музей Армении</li>
+                    <li>Вечернее шоу фонтанов</li>
+                </ul>
+            </div>
+            <div class="reviews-section">
+                <h3>Отзывы <span class="rating">★★★★★ (4.9/5)</span></h3>
+                <div class="reviews-list">
+                    <div class="review">
+                        <p class="review-author">Елена ★★★★★</p>
+                        <p class="review-text">Обязательно посетите вечером, когда включают фонтаны!</p>
+                    </div>
+                </div>
+                <form class="review-form">
+                    <select class="rating-select">
+                        <option value="5">★★★★★</option>
+                        <option value="4">★★★★☆</option>
+                        <option value="3">★★★☆☆</option>
+                        <option value="2">★★☆☆☆</option>
+                        <option value="1">★☆☆☆☆</option>
+                    </select>
+                    <textarea placeholder="Ваш отзыв..." required></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

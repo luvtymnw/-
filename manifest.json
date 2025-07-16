@@ -1,0 +1,21 @@
+{
+  "name": "Достопримечательности Армении",
+  "short_name": "Армения",
+  "description": "Путеводитель по городам и достопримечательностям Армении",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#007BFF",
+  "theme_color": "#007BFF",
+  "icons": [
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
