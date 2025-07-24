@@ -177,3 +177,28 @@ header {
         transform: none;
     }
 }
+.review-date {
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rating-select {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 4px;
+}
